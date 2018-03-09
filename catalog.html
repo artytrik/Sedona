@@ -21,15 +21,57 @@
     <main class="container">
       <h1 class="visually-hidden">Гостиницы</h1>
       <section>
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend class="filter-caption">Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-option-checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                <label for="filter-swimming-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-option-checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-option-checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-caption">Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-option-checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-option-checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" class="visually-hidden filter-option-checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-caption">Стоимость в сутки (р):</legend>
+            <span><output class="filter-output" name="min">От 0</output></span>
+            <span><output class="filter-output" name="max">До 3000</output></span>
+            <p><input type="range" class="visually-hidden filter-range" min="0"></p>
+          </fieldset>
+          <button class="button filter-button">Показать</button>
+        </form>
       </section>
       <section class="sorting">
-        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <p class="sorting-found">Найдено:<span>3</span></p>
         <p class="sorting-label">Сортировка:</p>
-        <ul class="sorting-option">
-          <li><a class="sorting-type">По цене</a></li>
+        <ul>
+          <li class="sorting-current"><a class="sorting-type">По цене</a></li>
           <li><a class="sorting-type">По типу</a></li>
           <li><a class="sorting-type">По рейтингу</a></li>
           <li><a class="sorting-triangle-up">Вверх</a></li>
@@ -37,7 +79,7 @@
         </ul>
       </section>
       <section class="catalog">
-        <h2 class="visually-hidden">Список отелей</h2>
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="catalog-list">
           <li class="catalog-hotel">
             <h3><a href="catalog-hotel.html">Amara Resort &amp; Spa</a></h3>
