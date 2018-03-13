@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff; /*Нужна ли текстура фона и его позиционрирование?*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation { /*Нужно ли задавать если совпадает с body?*/
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.intro { /*Куда вставлять фон гор?*/
+  text-align: center;
+}
+
+.intro b {
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.intro p { /*Где измерить толщину (кажется не совпадает)*/
+  line-height: 26px;
+}

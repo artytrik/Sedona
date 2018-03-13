@@ -2,19 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона-каталог</title>
+    <title>Седона: каталог гостиниц</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.png" width="138"height="70" alt="Логотип городка Седона">
+          <img src="img/index-logo.png" width="138" height="70" alt="Логотип городка Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a>Гостиницы</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -57,12 +60,21 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="filter-caption">Стоимость в сутки (р):</legend>
-            <span><output class="filter-output" name="min">От 0</output></span>
-            <span><output class="filter-output" name="max">До 3000</output></span>
-            <p><input type="range" class="visually-hidden filter-range" min="0"></p>
-          </fieldset>
+          <div class="filter-range-block">
+            <p class="filter-caption">Стоимость в сутки (р):</p>
+            <p class="filter-range-item">
+              <label class="visually-hidden" for="filter-min">Минимальная стоимость</label>
+              <input type="text" class="filter-range-box" name="min" id="filter-min" placeholder="От 0">
+            </p>
+            <p class="filter-range-item">
+              <label class="visually-hidden" for="filter-max">Максимальная стоимость</label>
+              <input type="text" class="filter-range-box" name="max" id="filter-max" placeholder="До 3000">
+            </p>
+            <p class="filter-range-item">
+              <label class="visually-hidden" for="filter-range">Диапазон цен</label>
+              <input type="text" class="visually-hidden filter-range" name="range" id="filter-range">
+            </p>
+          </div>
           <button class="button filter-button">Показать</button>
         </form>
       </section>
@@ -72,10 +84,10 @@
         <p class="sorting-label">Сортировка:</p>
         <ul>
           <li class="sorting-current"><a class="sorting-type">По цене</a></li>
-          <li><a class="sorting-type">По типу</a></li>
-          <li><a class="sorting-type">По рейтингу</a></li>
-          <li><a class="sorting-triangle-up">Вверх</a></li>
-          <li><a class="sorting-triangle-down">Вниз</a></li>
+          <li><a class="sorting-type" href="#">По типу</a></li>
+          <li><a class="sorting-type" href="#">По рейтингу</a></li>
+          <li><a class="sorting-triangle-up" href="#">Вверх</a></li>
+          <li><a class="sorting-triangle-down" href="#">Вниз</a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -84,7 +96,7 @@
           <li class="catalog-hotel">
             <h3><a href="catalog-hotel.html">Amara Resort &amp; Spa</a></h3>
             <p class="catalog-hotel-info">
-              <span>Гостиница</span>
+              <span>Гостиница</span> <!--Нужно ли спаны размечать классами?-->
               <span>От 4000 Р.</span>
             </p>
             <p class="catalog-hotel-image">
@@ -160,13 +172,13 @@
       <p>#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#" aria-label="Твиттер">Твиттер</a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Ютуб">Ютуб</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
-        websyte by
+        <span>websyte by</span>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>

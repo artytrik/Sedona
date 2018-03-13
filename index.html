@@ -2,13 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.png" width="138"height="70" alt="Логотип городка Седона">
+          <img src="img/index-logo.png" width="138" height="70" alt="Логотип городка Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -21,12 +24,12 @@
     <main class="container">
       <h1 class="visually-hidden">Городок Седона</h1>
       <div class="intro">
-        <b>Седона — небольшой городок в Аризоне,  заслуживающий большего! </b>
+        <b>Седона — небольшой городок в Аризоне,  заслуживающий большего!</b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="features-list">
+        <ol class="feature-list">
           <li class="feature-item-blue">
             <h3>Настоящий городок</h3>
             <p>№1</p>
@@ -71,7 +74,7 @@
             <p>№5</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
@@ -80,20 +83,20 @@
         <button class="button hotel-search" type="button">Поиск гостиницы в Седоне</button>
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="hotel-search-item">
-            <label for="arrival">Дата заезда</label>
-            <input type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+            <label for="search-arrival">Дата заезда</label>
+            <input type="text" name="arrival" id="search-arrival" placeholder="24 апреля 2017">
           </p>
           <p class="hotel-search-item">
-            <label for="departure">Дата выезда</label>
-            <input type="text" name="departure" id="departure" placeholder="4 июля 2017">
+            <label for="search-departure">Дата выезда</label>
+            <input type="text" name="departure" id="search-departure" placeholder="4 июля 2017">
           </p>
           <p class="hotel-search-item">
-            <label for="adult">Взрослые</label>
-            <input type="number" name="adult" id="adult" min="1" max="99" step="1" placeholder="2">
+            <label for="search-adult">Взрослые</label>
+            <input type="number" name="adult" id="search-adult" min="1" max="99" step="1" placeholder="2">
           </p>
           <p class="hotel-search-item">
-            <label for="child">Дети</label>
-            <input type="number" name="child" id="child" min="0" max="99" placeholder="0">
+            <label for="search-child">Дети</label>
+            <input type="number" name="child" id="search-child" min="0" max="99" placeholder="0">
           </p>
           <button class="button hotel-finder" type="submit">Найти</button>
         </form>
@@ -107,15 +110,16 @@
       <p>#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#" aria-label="Твиттер">Твиттер</a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Ютуб">Ютуб</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
-        websyte by
+        <span>websyte by</span>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
   </body>
 </html>
+
