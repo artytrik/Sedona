@@ -34,7 +34,7 @@
             <h3>Настоящий городок</h3>
             <p>№1</p>
             <p>Седона - не аттракцион для туристов</p>
-            <img src="img/town.jpg" width="800" height="401" alt="Городок Седона">
+            <img src="img/town-fix.jpg" width="800" height="256" alt="Городок Седона">
             <section class="town-features">
               <h2 class="visually-hidden">Преимущества городка</h2>
               <ul class="town-features-list">
@@ -57,7 +57,7 @@
             <h3>Там есть мост дьявола</h3>
             <p>№2</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
+            <img src="img/bridge-fix.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
           <li class="feature-item-white">
             <h3>Небольшая площадь</h3>
@@ -81,25 +81,6 @@
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки,  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="button hotel-search" type="button">Поиск гостиницы в Седоне</button>
-        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="hotel-search-item">
-            <label for="search-arrival">Дата заезда</label>
-            <input type="text" name="arrival" id="search-arrival" placeholder="24 апреля 2017">
-          </p>
-          <p class="hotel-search-item">
-            <label for="search-departure">Дата выезда</label>
-            <input type="text" name="departure" id="search-departure" placeholder="4 июля 2017">
-          </p>
-          <p class="hotel-search-item">
-            <label for="search-adult">Взрослые</label>
-            <input type="number" name="adult" id="search-adult" min="1" max="99" step="1" placeholder="2">
-          </p>
-          <p class="hotel-search-item">
-            <label for="search-child">Дети</label>
-            <input type="number" name="child" id="search-child" min="0" max="99" placeholder="0">
-          </p>
-          <button class="button hotel-finder" type="submit">Найти</button>
-        </form>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -117,9 +98,32 @@
       </div>
       <p class="footer-copyright">
         <span>websyte by</span>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
+
+    <section class="search-modal">
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="hotel-search-item">
+          <label for="search-arrival">Дата заезда</label>
+          <input type="text" name="arrival" id="search-arrival" placeholder="24 апреля 2017">
+        </p>
+        <p class="hotel-search-item">
+          <label for="search-departure">Дата выезда</label>
+          <input type="text" name="departure" id="search-departure" placeholder="4 июля 2017">
+        </p>
+        <p class="hotel-search-item">
+          <label for="search-adult">Взрослые</label>
+          <input type="number" name="adult" id="search-adult" min="1" max="99" step="1" placeholder="2">
+        </p>
+        <p class="hotel-search-item">
+          <label for="search-child">Дети</label>
+          <input type="number" name="child" id="search-child" min="0" max="99" placeholder="0">
+        </p>
+        <button class="button hotel-finder" type="submit">Найти</button>
+      </form>
+    </section>
+
   </body>
 </html>
 

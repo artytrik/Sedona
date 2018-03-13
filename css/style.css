@@ -9,14 +9,14 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #ffffff; /*Нужна ли текстура фона и его позиционрирование?*/
+  background-color: #ffffff; /*Нужна ли текстура фона и его позиционирование?*/
 }
 
 a {
   text-decoration: none;
 }
 
-.main-navigation { /*Нужно ли задавать если совпадает с body?*/
+.main-navigation {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
