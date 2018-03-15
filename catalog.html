@@ -23,11 +23,11 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Гостиницы</h1>
-      <section>
+      <section class="hotel-filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend class="filter-caption">Инфраструктура:</legend>
+            <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
                 <input type="checkbox" class="visually-hidden filter-option-checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
@@ -44,7 +44,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="filter-caption">Тип жилья:</legend>
+            <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
                 <input type="checkbox" class="visually-hidden filter-option-checkbox" name="hotel" id="filter-hotel" checked>
@@ -81,17 +81,17 @@
         <p class="sorting-label">Сортировка:</p>
         <ul>
           <li class="sorting-current"><a class="sorting-type">По цене</a></li>
-          <li><a class="sorting-type" href="#">По типу</a></li>
-          <li><a class="sorting-type" href="#">По рейтингу</a></li>
-          <li><a class="sorting-triangle-up" href="#">Вверх</a></li>
-          <li><a class="sorting-triangle-down" href="#">Вниз</a></li>
+          <li class="sorting-type"><a href="#">По типу</a></li>
+          <li class="sorting-type"><a href="#">По рейтингу</a></li>
+          <li class="sorting-triangle-up"><a href="#"><span> 1</span></a></li>
+          <li class="sorting-triangle-down"><a href="#"><span> 2</span></a></li>
         </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="catalog-list">
           <li class="catalog-hotel">
-            <h3><a href="catalog-hotel.html">Amara Resort &amp; Spa</a></h3>
+            <h3 class="hotel-header"><a href="catalog-hotel.html">Amara Resort &amp; Spa</a></h3>
             <p class="catalog-hotel-info">
               <span>Гостиница</span>
               <span>От 4000 Р.</span>
@@ -102,8 +102,8 @@
               </a>
             </p>
             <p class="catalog-hotel-button">
-              <a class="button-hotel-info" href="catalog-hotel.html">Подробнее</a>
-              <a class="button-hotel-book" href="#">Забронировать</a>
+              <a class="button button-hotel-info" href="catalog-hotel.html">Подробнее</a>
+              <a class="button button-hotel-book" href="#">Забронировать</a>
             </p>
             <p class="catalog-hotel-stars">
               <span>*</span>
@@ -116,7 +116,7 @@
             </p>
           </li>
           <li class="catalog-hotel">
-            <h3><a href="catalog-hotel.html">Desert Quail Inn</a></h3>
+            <h3 class="hotel-header"><a href="catalog-hotel.html">Desert Quail Inn</a></h3>
             <p class="catalog-hotel-info">
               <span>Мотель</span>
               <span>От 3000 Р.</span>
@@ -127,8 +127,8 @@
               </a>
             </p>
             <p class="catalog-hotel-button">
-              <a class="button-hotel-info" href="catalog-hotel.html">Подробнее</a>
-              <a class="button-hotel-book" href="#">Забронировать</a>
+              <a class="button button-hotel-info" href="catalog-hotel.html">Подробнее</a>
+              <a class="button button-hotel-book" href="#">Забронировать</a>
             </p>
             <p class="catalog-hotel-stars">
               <span>*</span>
@@ -140,7 +140,7 @@
             </p>
           </li>
           <li class="catalog-hotel">
-            <h3><a href="catalog-hotel.html">Villas at Poco Diablo</a></h3>
+            <h3 class="hotel-header"><a href="catalog-hotel.html">Villas at Poco Diablo</a></h3>
             <p class="catalog-hotel-info">
               <span>Апартаменты</span>
               <span>От 2000 Р.</span>
@@ -151,8 +151,8 @@
               </a>
             </p>
             <p class="catalog-hotel-button">
-              <a class="button-hotel-info" href="catalog-hotel.html">Подробнее</a>
-              <a class="button-hotel-book" href="#">Забронировать</a>
+              <a class="button button-hotel-info" href="catalog-hotel.html">Подробнее</a>
+              <a class="button button-hotel-book" href="#">Забронировать</a>
             </p>
             <p class="catalog-hotel-stars">
               <span>*</span>

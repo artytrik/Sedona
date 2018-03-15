@@ -9,7 +9,7 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #ffffff; /*Нужна ли текстура фона и его позиционирование?*/
+  background-color: #f2f2f2;
 }
 
 a {
@@ -24,7 +24,6 @@ a {
   background-color: #ffffff;
 }
 
-
 .site-navigation {
   list-style: none;
 }
@@ -38,17 +37,327 @@ a {
   color: #81b3d2;
 }
 
-.intro { /*Куда вставлять фон гор?*/
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+  color: #766357;
+}
+
+.intro {
   text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image:
+    url(../img/backgorund-fix.jpg),
+    url(../img/mask-big.png);
+  background-color: #ffffff
 }
 
 .intro b {
   font-size: 21px;
   line-height: 26px;
-
   color: #000000;
 }
 
-.intro p { /*Где измерить толщину (кажется не совпадает)*/
+.intro p {
   line-height: 26px;
+  font-weight: 400;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item-blue,
+.feature-item-white {
+  text-align: center;
+}
+
+.feature-item-blue h3,
+.feature-item-white h3 {
+  font-size: 21px;
+}
+
+.feature-item-blue {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.feature-item-white {
+  background-color: #eeeeee;
+}
+
+.feature-item-white h3 {
+  color: #000000;
+}
+
+.town-feature {
+  background-color: #ffffff;
+}
+
+.town-feature-list {
+  list-style: none;
+}
+
+.town-feature-item {
+  color: #333333;
+}
+
+.town-feature-item h3 {
+   color: #000000;
+}
+
+
+.search {
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.search b {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.search p {
+  line-height: 24px;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  border: none;
+}
+
+.hotel-search {
+  background-color: #766357;
+}
+
+.hotel-search:focus,
+.hotel-search:hover {
+  background-color: #604e43;
+}
+
+.hotel-search:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.map {
+  text-align: center;
+}
+
+.main-footer {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.search-modal {
+  color: #000000;
+  line-height: 26px;
+
+  background-color: #ffffff;
+}
+
+.hotel-search-item input[type="text"],
+.hotel-search-item input[type="password"] {
+  font: inherit;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.hotel-finder {
+  background-color: #81b3d2;
+}
+
+.hotel-finder:focus,
+.hotel-finder:hover {
+  background-color: #669ec0;
+}
+
+.hotel-finder:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.hotel-filter {
+  color: #ffffff;
+
+  background-image: url(../img/filter-background.jpg);
+  /*background-repeat: no-repeat;*/
+  background-position: top center;
+  background-color: #f2f2f2;
+}
+
+.hotel-filter fieldset {
+  border: none;
+}
+
+.hotel-filter legend,
+.filter-caption {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hotel-filter ul {
+  list-style: none;
+}
+
+.filter-option:hover,
+.filter-option:focus {
+  color: #ffffff;
+}
+
+.filter-option:disabled {
+  color: #6a6a6a;
+
+  opacity: 0.3;
+}
+
+.filter-range-box {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+.filter-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: 2px solid #ffffff;
+}
+
+.sorting {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-found {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-current a {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.sorting-type a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-triangle-up {
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.sorting-triangle-down { /*Как правильно стилизовать? */
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.catalog {
+  background-color: #ffffff;
+}
+
+.button-hotel-info {
+  background-color: #81b3d2;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-hotel-info:focus,
+.button-hotel-info:hover {
+  background-color: #669ec0;
+}
+
+.button-hotel-info:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.button-hotel-book {
+  background-color: #766357;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-hotel-book:focus,
+.button-hotel-book:hover {
+  background-color: #604e43;
+}
+
+.button-hotel-book:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.hotel-header {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-header a {
+  color: #000000;
+}
+
+.hotel-header a:hover,
+.hotel-header a:focus {
+  color: #81b3d2;
+}
+
+.hotel-header a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-hotel-rating {
+  background-color: #f2f2f2;
+}
+
+.catalog-hotel-stars span {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
 }
