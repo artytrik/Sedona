@@ -61,14 +61,18 @@
           </fieldset>
           <div class="filter-range-block">
             <p class="filter-caption">Стоимость в сутки (р):</p>
-            <p class="filter-range-item">
-              <label class="visually-hidden" for="filter-min">Минимальная стоимость</label>
-              <input type="text" class="filter-range-box" name="min" id="filter-min" placeholder="От 0">
-            </p>
-            <p class="filter-range-item">
-              <label class="visually-hidden" for="filter-max">Максимальная стоимость</label>
-              <input type="text" class="filter-range-box" name="max" id="filter-max" placeholder="До 3000">
-            </p>
+            <div class="filter-range-box">
+              <p class="filter-range-item">
+                <label class="visually-hidden" for="filter-min">Минимальная стоимость</label>
+                <label for="filter-min">От</label>
+                <input type="text" name="min" id="filter-min" value="0">
+              </p>
+              <p class="filter-range-item">
+                <label class="visually-hidden" for="filter-max">Максимальная стоимость</label>
+                <label for="filter-max">До</label>
+                <input type="text" name="max" id="filter-max" value="3000">
+              </p>
+            </div>
             <p class="filter-range-slider">Диапазон цен</p>
           </div>
           <a class="button filter-button" href="#">Показать</a>
@@ -77,7 +81,7 @@
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <p class="sorting-found">Найдено:<span>3</span></p>
-        <p class="sorting-label"><b>Сортировка:</b></p>
+        <p class="sorting-label">Сортировка:</p>
         <ul>
           <li class="sorting-current"><a class="sorting-type">По цене</a></li>
           <li class="sorting-type"><a href="#">По типу</a></li>

@@ -207,11 +207,16 @@ a {
   background-color: #ffffff;
 }
 
+.hotel-search-form {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  line-height: 26px;
+}
+
 .hotel-search-item input[type="text"], /*Цвет placeholder?*/
 .hotel-search-item input[type="password"] {
   font: inherit;
-  text-transform: uppercase;
-  color: #000000;
 
   background-color: #f2f2f2;
   border: none;
@@ -268,7 +273,16 @@ a {
 
 .filter-range-box {
   border: 2px solid #ffffff;
+}
+
+.filter-range-box input {
   background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .filter-button {
@@ -318,7 +332,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.sorting-triangle-down { /*Как правильно стилизовать? */
+.sorting-triangle-down { /*Как правильно стилизовать? - псевдоэелемент */
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
 }
@@ -388,10 +402,13 @@ a {
   background-repeat: no-repeat;
 }
 
-/*Тень от основного блока*/
+/*Тень от основного блока - блок в div*/
 /*Шрифт*/
 /*Картинки в форме*/
 /*Ссылка в футере и социальные сети*/
 /*Нормально ли когда у разных классов одинаковые атрибуты?*/
 /*Тире у цифр*/
 /*Использование b*/
+/*Сортировка:*/
+
+/*label в от и до*/
