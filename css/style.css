@@ -51,8 +51,8 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
   background-image:
-    url(../img/backgorund-fix.jpg),
-    url(../img/mask-big.png);
+    url(../img/mask-big.png),
+    url(../img/backgorund-fix.jpg);
   background-color: #ffffff
 }
 
@@ -167,6 +167,12 @@ a {
   background-color: #ffffff;
 }
 
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
 .footer-social {
   text-align: center;
 }
@@ -186,7 +192,7 @@ a {
   background-color: #ffffff;
 }
 
-.hotel-search-item input[type="text"],
+.hotel-search-item input[type="text"], /*Цвет placeholder?*/
 .hotel-search-item input[type="password"] {
   font: inherit;
   text-transform: uppercase;
@@ -215,7 +221,7 @@ a {
   color: #ffffff;
 
   background-image: url(../img/filter-background.jpg);
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-position: top center;
   background-color: #f2f2f2;
 }
@@ -271,6 +277,7 @@ a {
 .sorting-found {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 }
 
 .sorting ul {
@@ -361,3 +368,9 @@ a {
   background-image: url(../img/star.svg);
   background-repeat: no-repeat;
 }
+
+/*Тень от основного блока*/
+/*Шрифт*/
+/*Картинки в форме*/
+/*Ссылка в футере и социальные сети*/
+/*Нормально ли когда у разных классов одинаковые атрибуты?*/
