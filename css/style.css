@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -280,6 +295,10 @@ a {
   font-weight: 700;
 }
 
+.sorting-label {
+
+}
+
 .sorting ul {
   list-style: none;
 }
@@ -374,3 +393,5 @@ a {
 /*Картинки в форме*/
 /*Ссылка в футере и социальные сети*/
 /*Нормально ли когда у разных классов одинаковые атрибуты?*/
+/*Тире у цифр*/
+/*Использование b*/
