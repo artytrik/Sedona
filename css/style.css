@@ -31,10 +31,10 @@ a {
   text-decoration: none;
 }
 
-.container { /*Правильно ли помещать хедер и футер в контейнер?*/
+.container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px 0 rgba(50, 50, 50, .3), 0 -10px 30px 0 #ffffff; /*Как правильно вычислить тень?*/
+  box-shadow: 0 10px 30px 0 rgba(50, 50, 50, .3); /*Как правильно вычислить тень?*/
   background-color: #ffffff;
 }
 
@@ -111,6 +111,10 @@ a {
   color: #000000;
 }
 
+.title {
+  margin: 0;
+}
+
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -164,11 +168,14 @@ a {
 
 .town-feature {
 
+
+
   background-color: #ffffff;
 }
 
 .town-feature-list {
   display: flex;
+  height: 256px;
 
   list-style: none;
 }
@@ -226,26 +233,50 @@ a {
 }
 
 .map {
+  outline: 2px solid pink;
   text-align: center;
 }
 
 .main-footer {
-  color: #000000;
+  opacity: 0.9;
+  text-align: center;
+}
 
+.main-footer .container {
+  display: flex;
+  align-items: center;
 }
 
 .footer-hashtag {
+  margin: 0;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .footer-social {
+  width: 400px;
   text-align: center;
 }
 
 .footer-social ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.footer-social li {
+  background-color: #81b3d2;
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 400px;
+}
+
+.footer-copyright a {
+  color: #000000;
 }
 
 .social-button {
@@ -266,7 +297,7 @@ a {
   line-height: 26px;
 }
 
-.hotel-search-item input[type="text"], /*Цвет placeholder?*/
+.hotel-search-item input[type="text"],
 .hotel-search-item input[type="password"] {
   font: inherit;
 
@@ -290,6 +321,7 @@ a {
 }
 
 .hotel-filter {
+
   color: #ffffff;
 
   background-image: url(../img/filter-background.jpg);
@@ -298,8 +330,30 @@ a {
   background-color: #f2f2f2;
 }
 
-.hotel-filter fieldset {
+.filter fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+}
+
+.filter .infrastructure {
+  width: 240px;
+  margin-left: 72px;
+
+}
+
+.filter .living-type {
+  width: 288px;
+
 }
 
 .hotel-filter legend,
@@ -325,6 +379,10 @@ a {
 
 .filter-range-box {
   border: 2px solid #ffffff;
+}
+
+.filter-range-block {
+
 }
 
 .filter-range-box input {
@@ -354,17 +412,31 @@ a {
   line-height: 18px;
 }
 
+.sorting-wrapper {
+  display: flex;
+}
+
+.sorting-header {
+  width: 240px;
+
+  outline: 2px solid green;
+}
+
 .sorting-found {
+  margin-right: 40px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  outline: 2px solid red;
 }
 
 .sorting-label {
-
+  outline: 2px solid red;
 }
 
 .sorting ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -378,18 +450,37 @@ a {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-triangle-up {
+.sorting-triangle-up::before {
+  content: "";
+  width: 11;
+  height: 9;
+  position: absolute;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
 }
 
-.sorting-triangle-down { /*Как правильно стилизовать? - псевдоэелемент */
+.sorting-triangle-down::before { /*Как правильно стилизовать? - псевдоэелемент */
+  content: "";
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
 }
 
-.catalog {
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
 
+.catalog-hotel {
+  display: flex;
+  padding: 30px 72px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-hotel-info {
+  margin: 0;
+  padding: 0;
 }
 
 .button-hotel-info {
@@ -427,6 +518,8 @@ a {
 }
 
 .hotel-header {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
 }
@@ -445,6 +538,8 @@ a {
 }
 
 .catalog-hotel-rating {
+  text-align: center;
+  width: 111px;
   background-color: #f2f2f2;
 }
 
@@ -453,8 +548,17 @@ a {
   background-repeat: no-repeat;
 }
 
+.catalog-hotel-mark {
+  margin-left: auto;
+}
+
+.catalog-hotel-main {
+
+}
+
+
 /*Тень от основного блока - блок в div*/
-/*Шрифт*/
+
 /*Картинки в форме*/
 /*Ссылка в футере и социальные сети*/
 /*Нормально ли когда у разных классов одинаковые атрибуты?*/
