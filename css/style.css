@@ -31,16 +31,46 @@ a {
   text-decoration: none;
 }
 
+.container { /*Правильно ли помещать хедер и футер в контейнер?*/
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px 0 rgba(50, 50, 50, .3), 0 -10px 30px 0 #ffffff; /*Как правильно вычислить тень?*/
+  background-color: #ffffff;
+}
+
 .main-navigation {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
 
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header-logo {
+  position: absolute;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2){
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4){
+  text-align: right;
 }
 
 .site-navigation a {
@@ -61,60 +91,85 @@ a {
 }
 
 .intro {
+  margin: 0;
+  padding: 0;
+
   text-align: center;
+  line-height: 26px;
+
+  min-height: 724px;
 
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 0px -83px;
   background-image:
-    url(../img/mask-big.png),
-    url(../img/backgorund-fix.jpg);
+    url(../img/background-fix.jpg);
   background-color: #ffffff
 }
 
 .intro b {
   font-size: 21px;
-  line-height: 26px;
   color: #000000;
 }
 
-.intro p {
-  line-height: 26px;
-  font-weight: 400;
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+
+  list-style: none;
+
 }
 
-.feature-list {
-  list-style: none;
+.feature-item-definition {
+  width: 400px;
 }
 
 .feature-item-blue,
-.feature-item-white {
+.feature-item-grey {
   text-align: center;
 }
 
 .feature-item-blue h3,
-.feature-item-white h3 {
+.feature-item-grey h3 {
   font-size: 21px;
 }
 
+.feature-number-blue:before,
+.feature-number-blue:after {
+  content: "";
+}
+
 .feature-item-blue {
+  display: flex;
+
+
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
-.feature-item-white {
+
+.feature-item-grey {
+  display: flex;
+  flex-basis: 256px;
+
   background-color: #eeeeee;
 }
 
-.feature-item-white h3 {
+.feature-item-grey h3 {
   color: #000000;
 }
 
 .town-feature {
+
   background-color: #ffffff;
 }
 
 .town-feature-list {
+  display: flex;
+
   list-style: none;
 }
 
@@ -129,8 +184,6 @@ a {
 
 .search {
   text-align: center;
-
-  background-color: #ffffff;
 }
 
 .search b {
@@ -179,7 +232,6 @@ a {
 .main-footer {
   color: #000000;
 
-  background-color: #ffffff;
 }
 
 .footer-hashtag {
@@ -297,7 +349,6 @@ a {
 }
 
 .sorting {
-  background-color: #ffffff;
   color: #000000;
   font-size: 12px;
   line-height: 18px;
@@ -338,7 +389,7 @@ a {
 }
 
 .catalog {
-  background-color: #ffffff;
+
 }
 
 .button-hotel-info {
@@ -412,3 +463,10 @@ a {
 /*Сортировка:*/
 
 /*label в от и до*/
+
+/*------ Сеточные стили -------*/
+
+
+
+
+
