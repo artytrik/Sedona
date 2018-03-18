@@ -160,6 +160,7 @@ a {
 
 .feature-item-blue {
   display: flex;
+  flex-wrap: wrap;
 
 
   color: #ffffff;
@@ -519,15 +520,32 @@ a {
 
 .catalog-hotel {
   display: flex;
-  padding: 30px 72px;
+  padding: 28px 72px 30px;
   border-top: 1px solid #e5e5e5;
+}
+
+.catalog-hotel-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 90px;
+
+}
+
+.catalog-hotel-image {
+  order: -1;
+  margin-bottom: 0;
+
 }
 
 .catalog-hotel h3,
 .catalog-hotel p {
   margin: 0;
   padding: 0;
+
 }
+
 
 .catalog-hotel-info {
   margin: 0;
