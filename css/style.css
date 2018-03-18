@@ -129,7 +129,8 @@ a {
 
 .feature-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -169,7 +170,7 @@ a {
 
 .feature-item-grey {
   display: flex;
-  flex-basis: 256px;
+  height: 256px;
 
   background-color: #eeeeee;
 }

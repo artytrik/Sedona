@@ -50,29 +50,27 @@
             </div>
             <img src="img/bridge-fix.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
-          <div class="feature-item-grey">
-            <li>
-              <div class="feature-item-definition">
-                <h3>Небольшая площадь</h3>
-                <p class="feature-number-grey">№3</p>
-                <p>Все достопримечательности находятся в одном месте</p>
-              </div>
-            </li>
-            <li>
-              <div class="feature-item-definition">
-                <h3>Красивая дорога</h3>
-                <p class="feature-number-grey">№4</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-              </div>
-            </li>
-            <li>
-              <div class="feature-item-definition">
-                <h3>Мало туристов</h3>
-                <p class="feature-number-grey">№5</p>
-                <p>Большинство едет в гранд каньон и толпится там</p>
-              </div>
-            </li>
-          </div>
+          <li class="feature-item-grey">
+            <div class="feature-item-definition">
+              <h3>Небольшая площадь</h3>
+              <p class="feature-number-grey">№3</p>
+              <p>Все достопримечательности находятся в одном месте</p>
+            </div>
+          </li>
+          <li class="feature-item-grey">
+            <div class="feature-item-definition">
+              <h3>Красивая дорога</h3>
+              <p class="feature-number-grey">№4</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            </div>
+          </li>
+          <li class="feature-item-grey">
+            <div class="feature-item-definition">
+              <h3>Мало туристов</h3>
+              <p class="feature-number-grey">№5</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </li>
         </ol>
       </section>
        <section class="town-feature">
@@ -120,6 +118,7 @@
     </footer>
 
     <section class="search-modal">
+      <h2 class="visually-hidden">Форма поиска гостиницы</h2>
       <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="hotel-search-item">
           <label for="search-arrival">Дата заезда:</label>
@@ -131,11 +130,11 @@
         </p>
         <p class="hotel-search-item">
           <label for="search-adult">Взрослые:</label>
-          <input type="text" name="adult" id="search-adult" min="1" max="99" step="1" value="2">
+          <input type="text" name="adult" id="search-adult" value="2">
         </p>
         <p class="hotel-search-item">
           <label for="search-child">Дети:</label>
-          <input type="text" name="child" id="search-child" min="0" max="99" value="0">
+          <input type="text" name="child" id="search-child" value="0">
         </p>
         <button class="button hotel-finder" type="submit">Найти</button>
       </form>
