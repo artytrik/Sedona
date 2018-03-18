@@ -38,6 +38,14 @@ a {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-navigation {
   font-weight: 700;
   line-height: 26px;
@@ -90,6 +98,16 @@ a {
   color: #766357;
 }
 
+.welcome-background {
+  min-height: 500px;
+
+  background-repeat: no-repeat;
+  background-position: 0px -83px;
+  background-image:
+    url(../img/background-fix.jpg);
+  background-color: #ffffff
+}
+
 .intro {
   margin: 0;
   padding: 0;
@@ -97,13 +115,7 @@ a {
   text-align: center;
   line-height: 26px;
 
-  min-height: 724px;
 
-  background-repeat: no-repeat;
-  background-position: 0px -83px;
-  background-image:
-    url(../img/background-fix.jpg);
-  background-color: #ffffff
 }
 
 .intro b {
@@ -233,7 +245,7 @@ a {
 }
 
 .map {
-  outline: 2px solid pink;
+
   text-align: center;
 }
 
@@ -338,6 +350,7 @@ a {
 
 .filter {
   display: flex;
+  padding: 30px 72px;
 }
 
 .filter ul {
@@ -347,7 +360,6 @@ a {
 
 .filter .infrastructure {
   width: 240px;
-  margin-left: 72px;
 
 }
 
@@ -382,7 +394,13 @@ a {
 }
 
 .filter-range-block {
+  width: 288px;
+  margin-left: auto;
+}
 
+.filter-range-block p {
+  margin: 0;
+  padding: 0;
 }
 
 .filter-range-box input {
@@ -414,12 +432,30 @@ a {
 
 .sorting-wrapper {
   display: flex;
+  align-items: baseline;
+  margin: 0;
+  padding: 30px 72px;
 }
+
+.sorting-wrapper ul {
+  display: flex;
+  width: 288px;
+  justify-content: space-around;
+
+}
+
+.sorting-current,
+.sorting-type {
+  text-align: right;
+
+
+}
+
 
 .sorting-header {
   width: 240px;
 
-  outline: 2px solid green;
+
 }
 
 .sorting-found {
@@ -427,11 +463,11 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  outline: 2px solid red;
+
 }
 
 .sorting-label {
-  outline: 2px solid red;
+
 }
 
 .sorting ul {
@@ -448,6 +484,14 @@ a {
 .sorting-type a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
+}
+
+.soring-triangles {
+  margin-left: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
 }
 
 .sorting-triangle-up::before {
@@ -476,6 +520,12 @@ a {
   display: flex;
   padding: 30px 72px;
   border-top: 1px solid #e5e5e5;
+}
+
+.catalog-hotel h3,
+.catalog-hotel p {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-hotel-info {
@@ -552,23 +602,19 @@ a {
   margin-left: auto;
 }
 
-.catalog-hotel-main {
-
-}
 
 
 /*Тень от основного блока - блок в div*/
 
 /*Картинки в форме*/
+
 /*Ссылка в футере и социальные сети*/
-/*Нормально ли когда у разных классов одинаковые атрибуты?*/
+
 /*Тире у цифр*/
-/*Использование b*/
+
 /*Сортировка:*/
 
-/*label в от и до*/
-
-/*------ Сеточные стили -------*/
+/*Прозрачная карта*/
 
 
 
