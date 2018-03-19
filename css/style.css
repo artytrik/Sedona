@@ -64,22 +64,20 @@ a {
 
 .site-navigation {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
-
-  outline: 2px solid red;
+  align-items: center;
   margin: 0;
   padding: 0;
-
-  outline: 2px solid blue;
-
   list-style: none;
 }
 
 .site-navigation li {
   width: 20%;
-  outline: 2px solid green;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 11%;
+
 }
 
 .site-navigation li:nth-child(1),
