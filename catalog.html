@@ -29,6 +29,7 @@
       <section class="hotel-filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <div class="filter-block">
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
             <ul>
@@ -63,22 +64,23 @@
               </li>
             </ul>
           </fieldset>
+          </div>
           <div class="filter-range-block">
             <p class="filter-caption">Стоимость в сутки (р):</p>
             <div class="filter-range-box">
-              <p class="filter-range-item">
-                <label class="visually-hidden" for="filter-min">Минимальная стоимость</label>
-                <label for="filter-min">От</label>
-                <input type="text" name="min" id="filter-min" value="0">
-              </p>
-              <p class="filter-range-item">
-                <label class="visually-hidden" for="filter-max">Максимальная стоимость</label>
-                <label for="filter-max">До</label>
-                <input type="text" name="max" id="filter-max" value="3000">
-              </p>
+              <div class="price-control">
+                <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-control">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
             </div>
-            <p class="filter-range-slider">Диапазон цен</p>
-            <a class="button filter-button" href="#">Показать</a>
+            <button class="button filter-button">Показать</button>
           </div>
         </form>
       </section>
