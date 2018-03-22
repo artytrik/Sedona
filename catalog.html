@@ -92,13 +92,17 @@
             <span class="sorting-label">Сортировка:</span>
           </div>
           <ul>
-            <li class="sorting-current"><a class="sorting-type">По цене</a></li>
+            <li class="sorting-current"><a href="#">По цене</a></li>
             <li class="sorting-type"><a href="#">По типу</a></li>
             <li class="sorting-type"><a href="#">По рейтингу</a></li>
           </ul>
           <div class="sorting-triangles">
-            <span class="sorting-triangle-up"><a href="#"></a></span>
-            <span class="sorting-triangle-down"><a href="#"></a></span>
+            <a class="sorting-triangle-up" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+            </a>
+            <a class="sorting-triangle-down active" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+            </a>
           </div>
         </div>
       </section>
@@ -125,14 +129,14 @@
               </div>
             </div>
             <div class="catalog-hotel-mark">
-              <p class="catalog-hotel-stars">
-                <span>*</span>
-                <span>*</span>
-                <span>*</span>
-                <span>*</span>
-              </p>
+              <ul class="catalog-hotel-stars">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
               <p class="catalog-hotel-rating">
-                <span>Рейтинг:8,5</span>
+                <span>Рейтинг: 8,5</span>
               </p>
             </div>
           </li>
@@ -156,13 +160,13 @@
               </div>
             </div>
             <div class="catalog-hotel-mark">
-              <p class="catalog-hotel-stars">
-                <span>*</span>
-                <span>*</span>
-                <span>*</span>
-              </p>
+              <ul class="catalog-hotel-stars">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
               <p class="catalog-hotel-rating">
-                <span>Рейтинг:8,9</span>
+                <span>Рейтинг: 8,9</span>
               </p>
             </div>
           </li>
@@ -186,19 +190,19 @@
               </div>
             </div>
             <div class="catalog-hotel-mark">
-              <p class="catalog-hotel-stars">
-                <span>*</span>
-                <span>*</span>
-              </p>
+              <ul class="catalog-hotel-stars">
+                <li></li>
+                <li></li>
+              </ul>
               <p class="catalog-hotel-rating">
-                <span>Рейтинг:9,2</span>
+                <span>Рейтинг: 9,2</span>
               </p>
             </div>
           </li>
         </ul>
       </section>
     </main>
-     <footer class="main-footer">
+     <footer class="main-footer inner"> <!--Можно ли так?-->
       <div class="container">
         <p class="footer-hashtag">#visitsedona</p>
         <div class="footer-social">
