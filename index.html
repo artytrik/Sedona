@@ -87,9 +87,50 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки,  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-quote">Укажите предполагаемые даты поездки,  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="button hotel-search" type="button">Поиск гостиницы в Седоне</button>
-
+        <section class="hotel-search-modal"> <!--Не могу спозиционировать-->
+          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="hotel-search-item">
+              <label for="search-arrival">Дата заезда:</label>
+              <input type="text" name="arrival" id="search-arrival" placeholder="24 апреля 2017">
+              <button class="hotel-search-calendar" type="button">
+               <span class="visually-hidden">Календарь</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
+            </p>
+            <p class="hotel-search-item">
+              <label for="search-departure">Дата выезда:</label>
+              <input type="text" name="departure" id="search-departure" placeholder="4 июля 2017">
+              <button class="hotel-search-calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
+            </p>
+            <p class="hotel-search-item">
+              <label for="search-adult">Взрослые:</label>
+              <button class="hotel-search-minus" type="button">
+               <span class="visually-hidden">Убрать</span>
+              </button>
+              <input type="text" name="adult" id="search-adult" placeholder="2">
+              <button class="hotel-search-plus" type="button">
+                <span class="visually-hidden">Добавить</span>
+              </button>
+            </p>
+            <p class="hotel-search-item">
+              <label for="search-child">Дети:</label>
+              <button class="hotel-search-minus" type="button">
+                <span class="visually-hidden">Убрать</span>
+              </button>
+              <input type="text" name="child" id="search-child" placeholder="0">
+              <button class="hotel-search-plus" type="button">
+                <span class="visually-hidden">Добавить</span>
+              </button>
+            </p>
+            <button class="button hotel-finder" type="submit">Найти</button>
+          </form>
+        </section>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -126,49 +167,6 @@
         </p>
       </div>
     </footer>
-
-      <section class="search-modal"> <!--Не могу спозиционировать-->
-          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="hotel-search-item">
-              <label for="search-arrival">Дата заезда:</label>
-              <input type="text" name="arrival" id="search-arrival" value="24 апреля 2017">
-              <button class="button hotel-search-calendar" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-              </button>
-            </p>
-            <p class="hotel-search-item">
-              <label for="search-departure">Дата выезда:</label>
-              <input type="text" name="departure" id="search-departure" value="4 июля 2017">
-              <button class="button hotel-search-calendar" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-              </button>
-            </p>
-            <p class="hotel-search-item">
-              <label for="search-adult">Взрослые:</label>
-              <button class="button hotel-search-minus"></button>
-              <input type="text" name="adult" id="search-adult" value="2">
-              <button class="button hotel-search-plus">
-                <svg width="10" height="10">
-                  <line x1="0" y1="5" x2="10" y2="5" stroke ="#a9a9a9" stroke-width="3"/>
-                  <line x1="5" y1="0" x2="5" y2="10" stroke ="#a9a9a9" stroke-width="3"/>
-                </svg>
-              </button>
-            </p>
-            <p class="hotel-search-item">
-              <label for="search-child">Дети:</label>
-              <button class="button hotel-search-minus"></button>
-              <input type="text" name="child" id="search-child" value="0">
-              <button class="button hotel-search-plus">
-                <svg width="10" height="10">
-                  <line x1="0" y1="5" x2="10" y2="5" stroke ="#a9a9a9" stroke-width="3"/>
-                  <line x1="5" y1="0" x2="5" y2="10" stroke ="#a9a9a9" stroke-width="3"/>
-                </svg>
-              </button>
-            </p>
-            <button class="button hotel-finder" type="submit">Найти</button>
-          </form>
-        </section>
   </body>
 </html>
 
