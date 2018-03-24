@@ -128,7 +128,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .welcome-background {
-  min-height: 509px; /*Можно ли?*/
+  min-height: 509px;
 
   background-repeat: no-repeat;
   background-position: 0px -55px;
@@ -222,16 +222,24 @@ input[type="checkbox"].visually-hidden {
   background-color: #ffffff;
 }
 
-.feature-number-blue::before,
 .feature-number-grey::before {
   top: 10px;
   left: 115px;
 }
 
-.feature-number-blue::after,
 .feature-number-grey::after {
   top: 10px;
   right: 115px;
+}
+
+.feature-number-blue::before {
+  top: 10px;
+  left: 135px;
+}
+
+.feature-number-blue::after {
+  top: 10px;
+  right: 135px;
 }
 
 .feature-number-grey::before,
@@ -1204,7 +1212,3 @@ input[type="checkbox"].visually-hidden {
   margin-left: auto;
 }
 
-
-/*Сортировка: сетка, ховеры, треугольники*/
-
-/*Сетка отелей*/
