@@ -39,9 +39,7 @@ img {
 }
 
 .container {
-  width: 100%;
-  min-width: 768px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
 
@@ -181,6 +179,8 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   margin-bottom: 52px;
 }
+
+
 
 .feature-list {
   display: -webkit-box;
