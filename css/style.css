@@ -400,7 +400,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-search {
-  padding: 31px 139px;
+  width: 568px;
+  padding: 31px 84px;
   background-color: #766357;
   cursor: pointer;
 }
@@ -593,8 +594,7 @@ input[type="checkbox"].visually-hidden {
 .hotel-search-item input[type="password"] {
   font: inherit;
   width: 346px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  height: 38px;
   padding-right: 35px;
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
@@ -657,6 +657,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-search-calendar {
+  top: 8px;
   right: 9px;
   width: 21px;
   height: 22px;
@@ -665,6 +666,7 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-search-minus,
 .hotel-search-plus {
+  top: 10px;
   width: 19px;
   height: 19px;
 }
@@ -843,7 +845,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-option-checkbox:focus + label::before,
-.filter-option-checkbox:focus + label{
+.filter-option-checkbox:focus + label {
   outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
