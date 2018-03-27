@@ -420,12 +420,31 @@ input[type="checkbox"].visually-hidden {
 
 .map {
   text-align: center;
+  margin-bottom: -120px;
+
+}
+
+.map iframe {
+  position: relative;
   width: 1200px;
   height: 593px;
-  margin-bottom: -120px;
+  z-index: 3;
+
+  border: none;
+}
+
+.map img {
+  position: absolute;
+  width: 1200px;
+  height: 593px;
+  transform: translate(-50%);
+  bottom: 0px;
+  z-index: 2;
 }
 
 .main-footer {
+  position: relative;
+  z-index: 6;
   opacity: 0.9;
   text-align: center;
 }
@@ -528,7 +547,9 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-search-modal {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
+
+  display: none;
 
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -541,6 +562,17 @@ input[type="checkbox"].visually-hidden {
   line-height: 26px;
 
   background-color: #ffffff;
+}
+
+.modal-show {
+  display: block;
+
+  animation: open 1s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .hotel-search-form {
@@ -1302,3 +1334,34 @@ input[type="checkbox"].visually-hidden {
   margin-left: auto;
 }
 
+@keyframes open {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-52%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-48%);
+  }
+}
