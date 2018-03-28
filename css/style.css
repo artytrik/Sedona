@@ -3,7 +3,7 @@
   src: url("../fonts/ptsans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 @font-face {
   font-family: "PT Sans";
@@ -98,9 +98,6 @@ input[type="checkbox"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -115,18 +112,26 @@ input[type="checkbox"].visually-hidden {
   width: 20%;
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: 11%;
-}
-
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2){
-  text-align: left;
-}
-
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4){
+.site-navigation li:nth-child(4n-1),
+.site-navigation li:nth-child(4n){
   text-align: right;
+  margin: 0;
+}
+
+.site-navigation li:nth-child(4n){
+  margin-left: 4%;
+}
+
+.site-navigation li:nth-child(4n-1) {
+  margin-left: 6%;
+}
+
+.site-navigation li:nth-child(4n-2) {
+  margin-right: 6%;
+}
+
+.site-navigation li:nth-child(4n-3) {
+  margin-right: 4%;
 }
 
 .site-navigation a {
@@ -142,7 +147,10 @@ input[type="checkbox"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation-current a {
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
   color: #766357;
 }
 
@@ -160,7 +168,7 @@ input[type="checkbox"].visually-hidden {
 
 .intro {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
 
   text-align: center;
   line-height: 26px;
