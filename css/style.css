@@ -445,7 +445,10 @@ input[type="checkbox"].visually-hidden {
   position: absolute;
   width: 1200px;
   height: 593px;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  left: 50%;
   bottom: 0px;
   z-index: 2;
 }
@@ -517,7 +520,7 @@ input[type="checkbox"].visually-hidden {
   margin: 39px 100px 0 190px;
 }
 
-.footer-copyright a {
+.footer-copyright {
   position: relative;
 
   display: block;
@@ -525,12 +528,12 @@ input[type="checkbox"].visually-hidden {
   height: 41px;
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a:focus path {
+.footer-copyright-logo:hover path,
+.footer-copyright-logo:focus path {
   fill: #81b3d2;
 }
 
-.footer-copyright a:active path {
+.footer-copyright-logo:active path {
   fill: #bdbbbc;
 }
 
@@ -578,12 +581,16 @@ input[type="checkbox"].visually-hidden {
 .modal-show {
   display: block;
 
-  animation: open 1s;
+  -webkit-animation: open 1s;
+
+          animation: open 1s;
 }
 
 .modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .hotel-search-form {
@@ -1232,6 +1239,7 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 8px;
   font-size: 21px;
   line-height: 26px;
+  max-width: 400px;
 }
 
 .catalog-hotel-header a {
@@ -1345,6 +1353,16 @@ input[type="checkbox"].visually-hidden {
   margin-left: auto;
 }
 
+@-webkit-keyframes open {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes open {
   from {
     opacity: 0;
@@ -1355,10 +1373,11 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   10%,
@@ -1366,13 +1385,40 @@ input[type="checkbox"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-52%);
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(-48%);
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
   }
 }
