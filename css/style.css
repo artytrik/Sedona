@@ -15,7 +15,7 @@
 
 body {
   position: relative;
-  min-width: 1200px;
+  min-width: 768px;
 
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 
@@ -115,7 +115,6 @@ input[type="checkbox"].visually-hidden {
 .site-navigation li:nth-child(4n-1),
 .site-navigation li:nth-child(4n){
   text-align: right;
-  margin: 0;
 }
 
 .site-navigation li:nth-child(4n){
@@ -200,24 +199,35 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  width: 1200px;
+  width: 100%;
 
   list-style: none;
 }
 
-.feature-item-definition,
-.town-feature-definition,
-.feature-item-grey {
-  width: 400px;
+.feature-item-blue {
+  width: 100%;
 }
 
-.feature-item-definition p {
-  margin: 0 40px;
+.feature-item-blue-definition,
+.town-feature-item,
+.feature-item-grey {
+  width:33%;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+
+.feature-item-blue-definition {
+  
+}
+
+.feature-item-blue-definition p {
+  margin: 0;
+  padding: 0;
   margin-bottom: 24px;
 }
 
 .feature-item-grey p {
-  margin: 0 60px;
+  margin: 0;
   margin-bottom: 24px;
 }
 
@@ -225,8 +235,23 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 60px;
 }
 
-.feature-item-blue .feature-item-definition {
-  background-color: #81b3d2;
+
+.feature-item-picture {
+  width: 66%;
+  height: 256px;
+  max-height: 401px;
+}
+
+
+.feature-item-blue:first-of-type .feature-item-picture {
+  background: url("../img/town.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.feature-item-blue:nth-of-type(2) .feature-item-picture {
+  order: -1;
+  background: url("../img/bridge.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .feature-item-blue,
@@ -235,8 +260,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .feature-item-blue img {
-  width: 800px;
+  width: 66%;
   height: 256px;
+  max-height: 401px;
+}
+
+.feature-item-blue-content {
+  display: flex;
+  background-color: #81b3d2;
+   justify-content: space-between;
+
+  color: #ffffff;
 }
 
 .feature-number-blue,
@@ -266,19 +300,19 @@ input[type="checkbox"].visually-hidden {
 
 .feature-item-blue h3,
 .feature-item-grey h3 {
+  display: block;
+  vertical-align: middle;
   font-size: 21px;
-  margin: 47px 124px 24px 125px;
+  width: 166px;
+  margin: 0 auto;
   text-align: center;
+  margin-top: 53px;
+  margin-bottom: 22px;
 }
 
 .feature-item-blue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
-  color: #ffffff;
+  
+ 
 }
 
 .feature-item-blue:nth-of-type(2) img {
@@ -303,6 +337,7 @@ input[type="checkbox"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
@@ -313,7 +348,6 @@ input[type="checkbox"].visually-hidden {
 .town-feature-item {
   position: relative;
   color: #333333;
-  width: 400px;
 }
 
 .town-feature-item::before {
@@ -362,7 +396,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .town-feature-item h3 {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 163px;
   margin-bottom: 24px;
 
