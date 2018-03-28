@@ -22,6 +22,9 @@ catch(err) {
 
 search.addEventListener("click", function (evt) {
   evt.preventDefault();
+  if (popup.classList.contains("modal-show")) {
+    popup.classList.remove("modal-error");
+  }
   popup.classList.toggle("modal-show");
   if (storageAdult) {
     adult.value = storageAdult;

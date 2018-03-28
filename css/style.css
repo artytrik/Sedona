@@ -3,7 +3,7 @@
   src: url("../fonts/ptsans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-} 
+}
 
 @font-face {
   font-family: "PT Sans";
@@ -119,19 +119,19 @@ input[type="checkbox"].visually-hidden {
 }
 
 .site-navigation li:nth-child(4n){
-  margin-left: 4%;
+  margin-left: 3%;
 }
 
 .site-navigation li:nth-child(4n-1) {
-  margin-left: 6%;
+  margin-left: 7%;
 }
 
 .site-navigation li:nth-child(4n-2) {
-  margin-right: 6%;
+  margin-right: 7%;
 }
 
 .site-navigation li:nth-child(4n-3) {
-  margin-right: 4%;
+  margin-right: 3%;
 }
 
 .site-navigation a {
@@ -165,28 +165,28 @@ input[type="checkbox"].visually-hidden {
   background-color: #ffffff;
   background-size: cover;
 }
-
 .intro {
   margin: 0 auto;
-  width: 100%;
+  width: 576px;
+  padding: 58px 20px 52px;
+  box-sizing: border-box;
 
   text-align: center;
   line-height: 26px;
 }
 
 .intro b {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 60px 370px 40px;
+  display: block;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 28px;
   font-size: 21px;
+  font-weight: 700;
   color: #000000;
 }
 
 .intro p {
   margin: 0;
-  margin-bottom: 52px;
 }
 
 
@@ -212,13 +212,13 @@ input[type="checkbox"].visually-hidden {
 }
 
 .feature-item-definition p {
-  margin: 0 40px;
-  margin-bottom: 24px;
+  margin: 0 48px;
+  margin-bottom: 22px;
 }
 
 .feature-item-grey p {
-  margin: 0 60px;
-  margin-bottom: 24px;
+  margin: 0 68px;
+  margin-bottom: 22px;
 }
 
 .feature-item-grey p:last-child {
@@ -358,12 +358,12 @@ input[type="checkbox"].visually-hidden {
 
 
 .town-feature-item p {
-  margin: 0 50px 84px 50px;
+  margin: 0 50px 81px 50px;
 }
 
 .town-feature-item h3 {
   margin: 0;
-  margin-top: 163px;
+  margin-top: 161px;
   margin-bottom: 24px;
 
   color: #000000;
@@ -374,11 +374,19 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 
+.search-wrapper {
+  margin: 0 auto;
+  width: 576px;
+  padding: 49px 20px 47px;
+  box-sizing: border-box;
+
+  text-align: center;
+  line-height: 26px;
+}
+
 .search b {
   display: block;
-  vertical-align: middle;
 
-  margin-top: 50px;
   margin-bottom: 25px;
 
   font-size: 30px;
@@ -387,8 +395,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-quote {
-  margin: 0 370px 48px;
-
+  margin: 0;
   line-height: 24px;
 }
 
@@ -428,7 +435,7 @@ input[type="checkbox"].visually-hidden {
 
 .map {
   text-align: center;
-  margin-bottom: -120px;
+  margin-bottom: -127px;
 
 }
 
@@ -493,11 +500,11 @@ input[type="checkbox"].visually-hidden {
 }
 
 .footer-social li {
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-right: 6px;
+  margin-bottom: 6px;
 }
 
-.footer-social li:last-child {
+.footer-social li:nth-child(3n) {
   margin: 0;
 }
 
