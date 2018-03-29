@@ -12,6 +12,8 @@ var isStorageSupport = true;
 var storageAdult = "";
 var storageChild = "";
 
+popup.classList.add("modal-close");
+
 try {
   storageAdult = localStorage.getItem("adult");
   storageChild = localStorage.getItem("child");

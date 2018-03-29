@@ -358,7 +358,6 @@ input[type="checkbox"].visually-hidden {
   background-image: url("../img/icon-2.svg");
 }
 
-
 .town-feature-item p {
   margin: 0 50px 81px 50px;
 }
@@ -370,7 +369,6 @@ input[type="checkbox"].visually-hidden {
 
   color: #000000;
 }
-
 
 .search {
   text-align: center;
@@ -886,15 +884,12 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
 }
 
-
 .hotel-filter legend {
   margin-bottom: 25px;
 
   font-size: 16px;
   font-weight: 700;
 }
-
-
 
 .hotel-filter ul {
   list-style: none;
@@ -916,7 +911,6 @@ input[type="checkbox"].visually-hidden {
       -ms-user-select: none;
           user-select: none;
 }
-
 
 .filter-option-checkbox + label::before {
   position: absolute;
@@ -1130,7 +1124,6 @@ input[type="checkbox"].visually-hidden {
 .sorting-type {
   width: 86px;
 }
-
 
 .sorting-found {
   margin-right: 44px;
