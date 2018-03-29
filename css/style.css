@@ -163,6 +163,7 @@ input[type="checkbox"].visually-hidden {
   background-color: #ffffff;
   background-size: cover;
 }
+
 .intro {
   margin: 0 auto;
   width: 576px;
@@ -945,7 +946,6 @@ input[type="checkbox"].visually-hidden {
   opacity: 0.3;
 }
 
-
 .filter-range-block {
   margin-right: 72px;
   width: 320px;
@@ -1137,7 +1137,6 @@ input[type="checkbox"].visually-hidden {
   margin-right: 40px;
 }
 
-
 .sorting ul {
   margin: 0;
   padding: 0;
@@ -1249,7 +1248,6 @@ input[type="checkbox"].visually-hidden {
   width: 135px;
   height: 90px;
 }
-
 
 .catalog-hotel-description {
   display: -webkit-box;
