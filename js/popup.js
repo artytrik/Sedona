@@ -22,10 +22,10 @@ catch(err) {
 
 search.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (popup.classList.contains("modal-show")) {
+  if (popup.classList.contains("modal-close")) {
     popup.classList.remove("modal-error");
   }
-  popup.classList.toggle("modal-show");
+  popup.classList.toggle("modal-close");
   if (storageAdult) {
     adult.value = storageAdult;
   }
@@ -53,8 +53,8 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
+    if (popup.classList.contains("modal-close")) {
+      popup.classList.remove("modal-close");
     }
   }
 });
