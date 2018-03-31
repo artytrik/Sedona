@@ -1,13 +1,15 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -38,7 +40,7 @@ img {
   height: auto;
 }
 
-.container {
+.wrapper {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -160,7 +162,7 @@ input[type="checkbox"].visually-hidden {
   background-position: 0 -55px;
   background-image:
     url(../img/background-fix.jpg);
-  background-color: #ffffff;
+  background-color: #dceaf3;
   background-size: cover;
 }
 
@@ -420,7 +422,7 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-search {
   width: 568px;
-  padding: 31px 84px;
+  padding: 30px 84px;
 
   background-color: #766357;
 
@@ -470,6 +472,7 @@ input[type="checkbox"].visually-hidden {
 .main-footer {
   position: relative;
   z-index: 6;
+  background-color: #ffffff;
 
   text-align: center;
 
@@ -560,7 +563,7 @@ input[type="checkbox"].visually-hidden {
   content: "website by";
   bottom: 12px;
   right: 115px;
-  
+
   width: 89px;
 
   color: #000000;
@@ -847,7 +850,7 @@ input[type="checkbox"].visually-hidden {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-position: 0 -55px;
-  background-color: #f2f2f2;
+  background-color: #7d9bbd;
 }
 
 .filter fieldset {
@@ -905,7 +908,7 @@ input[type="checkbox"].visually-hidden {
   position: relative;
 
   display: block;
-  
+
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -990,11 +993,11 @@ input[type="checkbox"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
-  
+
   vertical-align: bottom;
   font-size: 14px;
   line-height: 21px;
-  
+
   cursor: pointer;
 }
 
@@ -1122,7 +1125,7 @@ input[type="checkbox"].visually-hidden {
 
 .sorting-type-active,
 .sorting-type {
-  width: 86px;
+  width: 81px;
 }
 
 .sorting-found {
@@ -1194,7 +1197,11 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sorting-triangle-up.active path,
-.sorting-triangle-down.active path {
+.sorting-triangle-down.active path,
+.sorting-triangle-up.active:hover path,
+.sorting-triangle-down.active:hover path,
+.sorting-triangle-up.active:focus path,
+.sorting-triangle-down.active:focus path {
   fill: #81b3d2;
 }
 
@@ -1347,7 +1354,7 @@ input[type="checkbox"].visually-hidden {
   width: 110px;
 
   text-align: center;
-  
+
   background-color: #f2f2f2;
 }
 
@@ -1367,7 +1374,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-bottom: 47px;
-      
+
   list-style: none;
 }
 
