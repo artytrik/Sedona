@@ -633,8 +633,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-search-item {
-  position: relative;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,6 +644,10 @@ input[type="checkbox"].visually-hidden {
           align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.hotel-input-wrapper {
+  position: relative;
 }
 
 .hotel-search-item:nth-of-type(1) label {
