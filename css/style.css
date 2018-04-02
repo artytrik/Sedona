@@ -474,15 +474,13 @@ input[type="checkbox"].visually-hidden {
   z-index: 6;
   background-color: #ffffff;
 
-  text-align: center;
-
-  opacity: 0.9;
-}
-
-.main-footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  text-align: center;
+
+  opacity: 0.9;
 }
 
 .footer-hashtag {
